@@ -32,7 +32,7 @@ const RedshiftCalculator = () => {
         values: orderedKeys.map((key) => inputData[key]),
       };
       console.log(output);
-      const response = await fetch("http://localhost:8000/predict", {
+      const response = await fetch("https://redshift-rosy.vercel.app/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
